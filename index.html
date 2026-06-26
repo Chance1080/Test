@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ========================================================= -->
+<!-- HEAD 开始 -->
+<!-- ========================================================= -->
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,10 +12,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Fingers Gang</title>
+    <title>👆 Fingers Gang</title>
 
     <meta name="description"
-          content="Fingers Gang is an independent game studio creating cinematic interactive experiences.">
+          content="Official website of Fingers Gang.">
+
+    <meta name="keywords"
+          content="Games, Fingers Gang, Rockstar Style">
+
+    <!-- Google Fonts -->
 
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
@@ -20,205 +29,216 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
+
+    <!-- CSS -->
 
     <link rel="stylesheet"
           href="css/style.css">
 
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
 </head>
+
+<!-- ========================================================= -->
+<!-- HEAD 结束 -->
+<!-- ========================================================= -->
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ========================================================= -->
+<!-- Header 开始 -->
+<!-- ========================================================= -->
 
-    <header id="header">
+<header class="header">
 
-        <div class="container nav-wrapper">
+    <div class="container">
 
-            <a href="#"
-               class="logo">
+        <div class="logo">
 
-                <span>FG</span>
+            <a href="index.html">
 
-            </a>
-
-            <nav>
-
-                <ul class="nav-menu">
-
-                    <li><a href="#">Games</a></li>
-
-                    <li><a href="#">News</a></li>
-
-                    <li><a href="#">Studio</a></li>
-
-                    <li><a href="#">Careers</a></li>
-
-                    <li><a href="#">Support</a></li>
-
-                </ul>
-
-            </nav>
-
-            <a href="#"
-               class="nav-button">
-
-                Store
+                👆 Fingers Gang
 
             </a>
 
         </div>
 
-    </header>
+        <nav class="navbar">
 
-    <!-- ================= HERO ================= -->
+            <ul>
 
-    <section class="hero">
+                <li>
 
-        <div class="hero-overlay"></div>
+                    <a href="#featured">
 
-        <div class="container hero-wrapper">
+                        Games
 
-            <div class="hero-left">
+                    </a>
 
-                <span class="hero-tag">
+                </li>
 
-                    NEW ORIGINAL IP
+                <li>
+
+                    <a href="#news">
+
+                        News
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#gallery">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#store">
+
+                        Store
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#support">
+
+                        Support
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- ========================================================= -->
+<!-- Header 结束 -->
+<!-- ========================================================= -->
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- Hero Slider 开始 -->
+<!-- ========================================================= -->
+
+<section class="hero">
+
+    <div class="slider">
+
+        <!-- ====================================== -->
+        <!-- Slide 01 -->
+        <!-- ====================================== -->
+
+        <div class="slide active">
+
+            <img src="images/outlaws.jpg"
+                 alt="The Outlaws">
+
+            <!--
+            如果以后使用视频：
+
+            <video autoplay
+                   muted
+                   loop
+                   playsinline>
+
+                <source src="videos/outlaws.mp4"
+                        type="video/mp4">
+
+            </video>
+
+            -->
+
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="category">
+
+                    OPEN WORLD ACTION
 
                 </span>
 
                 <h1>
 
-                    WE BUILD
-
-                    <br>
-
-                    WORLDS
+                    THE OUTLAWS
 
                 </h1>
 
                 <p>
 
-                    Fingers Gang creates cinematic action games
-                    powered by unforgettable storytelling,
-                    innovative gameplay,
-                    and next-generation technology.
+                    Build your empire.
+                    Take every street.
+                    Rule the city.
 
                 </p>
 
-                <div class="hero-buttons">
+                <a href="games/outlaws.html"
+                   class="hero-btn">
 
-                    <a href="#games"
-                       class="btn-primary">
+                    VIEW GAME →
 
-                        Explore Games
-
-                    </a>
-
-                    <a href="#"
-                       class="btn-secondary">
-
-                        Watch Trailer
-
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
-        <div class="scroll-indicator">
+        <!-- ====================================== -->
+        <!-- Slide 02 -->
+        <!-- ====================================== -->
 
-            <span></span>
+        <div class="slide">
 
-            <p>SCROLL</p>
+            <img src="images/midnight.jpg"
+                 alt="Midnight">
 
-        </div>
+            <div class="overlay"></div>
 
-    </section>
+            <div class="hero-content">
 
-    <!-- ================= FEATURED GAME ================= -->
-<section class="featured-game" id="games">
+                <span class="category">
 
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>LATEST RELEASE</span>
-
-            <h2>Featured Game</h2>
-
-        </div>
-
-        <div class="featured-wrapper">
-
-            <div class="featured-image">
-
-                <img src="images/echo-protocol.jpg"
-                     alt="Echo Protocol">
-
-            </div>
-
-            <div class="featured-content">
-
-                <span class="game-type">
-
-                    ORIGINAL IP
+                    SURVIVAL HORROR
 
                 </span>
 
-                <h3>
+                <h1>
 
-                    Echo Protocol
+                    MIDNIGHT
 
-                </h3>
+                </h1>
 
                 <p>
 
-                    In the final years of humanity,
-                    every decision changes the city.
-
-                    Explore a massive cyberpunk world
-                    where trust is earned,
-                    alliances shift,
-                    and every mission shapes the future.
+                    Every shadow
+                    hides another nightmare.
 
                 </p>
 
-                <div class="game-info">
+                <a href="games/midnight.html"
+                   class="hero-btn">
 
-                    <div>
-
-                        <h4>Genre</h4>
-
-                        <p>Action RPG</p>
-
-                    </div>
-
-                    <div>
-
-                        <h4>Engine</h4>
-
-                        <p>Unreal Engine 5</p>
-
-                    </div>
-
-                    <div>
-
-                        <h4>Players</h4>
-
-                        <p>Single Player</p>
-
-                    </div>
-
-                </div>
-
-                <a href="#"
-                   class="btn-primary">
-
-                    Learn More
+                    VIEW GAME →
 
                 </a>
 
@@ -226,166 +246,41 @@
 
         </div>
 
-    </div>
+        <!-- ====================================== -->
+        <!-- Slide 03 -->
+        <!-- ====================================== -->
 
-</section>
-    <!-- 下一部分继续 -->
-        <!-- ===================================================== -->
-    <!-- Featured Game 精选游戏 -->
-    <!-- ===================================================== -->
+        <div class="slide">
 
-    <section class="featured-game" id="games">
+            <img src="images/project-zero.jpg"
+                 alt="Project Zero">
 
-        <div class="container">
+            <div class="overlay"></div>
 
-            <div class="section-title">
+            <div class="hero-content">
 
-                <span>FEATURED GAME</span>
+                <span class="category">
 
-                <h2>Discover Our Latest Project</h2>
+                    SCI-FI RPG
 
-            </div>
+                </span>
 
-            <div class="featured-grid">
+                <h1>
 
-                <!-- 左侧图片 -->
+                    PROJECT ZERO
 
-                <div class="featured-image">
-
-                    <img src="images/echo-protocol.jpg"
-                         alt="Echo Protocol">
-
-                </div>
-
-                <!-- 右侧介绍 -->
-
-                <div class="featured-content">
-
-                    <span class="game-status">
-
-                        COMING SOON
-
-                    </span>
-
-                    <h3>
-
-                        ECHO PROTOCOL
-
-                    </h3>
-
-                    <p>
-
-                        A cinematic open-world action game set in a futuristic
-                        metropolis where every decision changes the city.
-
-                        Become an elite operative fighting corruption,
-                        uncovering conspiracies,
-                        and surviving impossible missions.
-
-                    </p>
-
-                    <div class="game-meta">
-
-                        <div class="meta-item">
-
-                            <small>Genre</small>
-
-                            <strong>Action RPG</strong>
-
-                        </div>
-
-                        <div class="meta-item">
-
-                            <small>Engine</small>
-
-                            <strong>Unreal Engine 5</strong>
-
-                        </div>
-
-                        <div class="meta-item">
-
-                            <small>Release</small>
-
-                            <strong>2028</strong>
-
-                        </div>
-
-                    </div>
-
-                    <div class="featured-buttons">
-
-                        <a href="#"
-                           class="btn-primary">
-
-                            Learn More
-
-                        </a>
-
-                        <a href="#"
-                           class="btn-secondary">
-
-                            Wishlist
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ===================================================== -->
-    <!-- Studio 工作室介绍 -->
-    <!-- ===================================================== -->
-
-    <section class="studio">
-
-        <div class="container studio-grid">
-
-            <div class="studio-left">
-
-                <span>OUR PHILOSOPHY</span>
-
-                <h2>
-
-                    WE CREATE
-
-                    EXPERIENCES
-
-                    NOT JUST
-
-                    GAMES.
-
-                </h2>
-
-            </div>
-
-            <div class="studio-right">
+                </h1>
 
                 <p>
 
-                    Fingers Gang is an independent game studio focused on
-                    creating immersive worlds through cinematic storytelling,
-                    technical innovation and unforgettable gameplay.
+                    Humanity begins again.
 
                 </p>
 
-                <p>
+                <a href="games/project-zero.html"
+                   class="hero-btn">
 
-                    Every title we develop is handcrafted by artists,
-                    programmers and designers who believe games are one of
-                    the greatest storytelling mediums.
-
-                </p>
-
-                <a href="#"
-                   class="text-link">
-
-                    Learn About The Studio →
+                    VIEW GAME →
 
                 </a>
 
@@ -393,152 +288,85 @@
 
         </div>
 
-    </section>
+        <!-- ====================================== -->
+        <!-- Slide 04 -->
+        <!-- ====================================== -->
 
-    <!-- ===================================================== -->
-    <!-- Latest News 最新动态 -->
-    <!-- ===================================================== -->
+        <div class="slide">
 
-    <section class="news">
+            <img src="images/racing.jpg"
+                 alt="Fingers Racing">
 
-        <div class="container">
+            <div class="overlay"></div>
 
-            <div class="section-title">
+            <div class="hero-content">
 
-                <span>LATEST NEWS</span>
+                <span class="category">
 
-                <h2>Inside Fingers Gang</h2>
+                    STREET RACING
 
-            </div>
+                </span>
 
-            <div class="news-grid">
+                <h1>
 
-                <article class="news-card">
+                    FINGERS RACING
 
-                    <img src="images/news1.jpg"
-                         alt="">
+                </h1>
 
-                    <div class="news-content">
+                <p>
 
-                        <small>June 2026</small>
+                    Speed changes everything.
 
-                        <h3>
+                </p>
 
-                            Echo Protocol Official Reveal
+                <a href="games/racing.html"
+                   class="hero-btn">
 
-                        </h3>
+                    VIEW GAME →
 
-                        <a href="#">
-
-                            Read More →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <article class="news-card">
-
-                    <img src="images/news2.jpg"
-                         alt="">
-
-                    <div class="news-content">
-
-                        <small>May 2026</small>
-
-                        <h3>
-
-                            Studio Expansion Begins
-
-                        </h3>
-
-                        <a href="#">
-
-                            Read More →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <article class="news-card">
-
-                    <img src="images/news3.jpg"
-                         alt="">
-
-                    <div class="news-content">
-
-                        <small>April 2026</small>
-
-                        <h3>
-
-                            Unreal Engine 5 Development Update
-
-                        </h3>
-
-                        <a href="#">
-
-                            Read More →
-
-                        </a>
-
-                    </div>
-
-                </article>
+                </a>
 
             </div>
 
         </div>
 
-    </section>
-<section class="studio-section">
+        <!-- ====================================== -->
+        <!-- 左右切换按钮 -->
+        <!-- ====================================== -->
 
-    <div class="container studio-wrapper">
+        <button class="slider-btn prev">
 
-        <div class="studio-left">
+            &#10094;
 
-            <span>WHO WE ARE</span>
+        </button>
 
-            <h2>
+        <button class="slider-btn next">
 
-                STORIES.
+            &#10095;
 
-                <br>
+        </button>
 
-                GAMEPLAY.
+        <!-- ====================================== -->
+        <!-- 指示器 -->
+        <!-- ====================================== -->
 
-                <br>
+        <div class="slider-dots">
 
-                EMOTION.
+            <span class="dot active"></span>
 
-            </h2>
+            <span class="dot"></span>
 
-        </div>
+            <span class="dot"></span>
 
-        <div class="studio-right">
-
-            <p>
-
-                Fingers Gang is an independent
-                video game studio dedicated to
-                building cinematic adventures.
-
-                We believe every world should
-                feel alive,
-                every character should matter,
-                and every player deserves an unforgettable journey.
-
-            </p>
+            <span class="dot"></span>
 
         </div>
 
     </div>
 
 </section>
-    <script src="js/main.js"></script>
 
-</body>
-
-</html>
+<!-- ========================================================= -->
+<!-- Hero Slider 结束 -->
+<!-- ========================================================= -->
+    
