@@ -8,37 +8,22 @@
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>👆 Fingers Gang</title>
 
-    <meta name="description"
-          content="Official website of Fingers Gang.">
-
-    <meta name="keywords"
-          content="Games, Fingers Gang, Rockstar Style">
+    <meta name="description" content="Official Website of Fingers Gang">
 
     <!-- Google Fonts -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
     <!-- CSS -->
-
-    <link rel="stylesheet"
-          href="css/style.css">
-
-    <link rel="stylesheet"
-          href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -52,21 +37,28 @@
 <!-- Header 开始 -->
 <!-- ========================================================= -->
 
-<header class="header">
+<header id="header">
 
-    <div class="container">
+    <div class="header-container">
 
-        <div class="logo">
+        <!-- 收缩后显示 -->
+        <button class="menu-toggle">
 
-            <a href="index.html">
+            ☰
 
-                👆 Fingers Gang
+        </button>
 
-            </a>
+        <!-- Logo -->
 
-        </div>
+        <a href="index.html" class="logo">
 
-        <nav class="navbar">
+            👆 Fingers Gang
+
+        </a>
+
+        <!-- Navigation -->
+
+        <nav class="navigation">
 
             <ul>
 
@@ -140,21 +132,21 @@
 <!-- Hero Slider 开始 -->
 <!-- ========================================================= -->
 
-<section class="hero">
+<section id="hero">
 
     <div class="slider">
 
-        <!-- ====================================== -->
+        <!-- ================================================= -->
         <!-- Slide 01 -->
-        <!-- ====================================== -->
+        <!-- ================================================= -->
 
-        <div class="slide active">
+        <article class="slide active">
 
             <img src="images/outlaws.jpg"
                  alt="The Outlaws">
 
             <!--
-            如果以后使用视频：
+            如果以后改成视频
 
             <video autoplay
                    muted
@@ -172,9 +164,9 @@
 
             <div class="hero-content">
 
-                <span class="category">
+                <span class="game-category">
 
-                    OPEN WORLD ACTION
+                    OPEN WORLD CRIME
 
                 </span>
 
@@ -187,13 +179,12 @@
                 <p>
 
                     Build your empire.
-                    Take every street.
-                    Rule the city.
+                    Rule every street.
 
                 </p>
 
                 <a href="games/outlaws.html"
-                   class="hero-btn">
+                   class="hero-button">
 
                     VIEW GAME →
 
@@ -201,13 +192,17 @@
 
             </div>
 
-        </div>
+        </article>
 
-        <!-- ====================================== -->
+
+
+
+
+        <!-- ================================================= -->
         <!-- Slide 02 -->
-        <!-- ====================================== -->
+        <!-- ================================================= -->
 
-        <div class="slide">
+        <article class="slide">
 
             <img src="images/midnight.jpg"
                  alt="Midnight">
@@ -216,7 +211,7 @@
 
             <div class="hero-content">
 
-                <span class="category">
+                <span class="game-category">
 
                     SURVIVAL HORROR
 
@@ -230,13 +225,12 @@
 
                 <p>
 
-                    Every shadow
-                    hides another nightmare.
+                    Every shadow hides another nightmare.
 
                 </p>
 
                 <a href="games/midnight.html"
-                   class="hero-btn">
+                   class="hero-button">
 
                     VIEW GAME →
 
@@ -244,13 +238,17 @@
 
             </div>
 
-        </div>
+        </article>
 
-        <!-- ====================================== -->
+
+
+
+
+        <!-- ================================================= -->
         <!-- Slide 03 -->
-        <!-- ====================================== -->
+        <!-- ================================================= -->
 
-        <div class="slide">
+        <article class="slide">
 
             <img src="images/project-zero.jpg"
                  alt="Project Zero">
@@ -259,7 +257,7 @@
 
             <div class="hero-content">
 
-                <span class="category">
+                <span class="game-category">
 
                     SCI-FI RPG
 
@@ -278,7 +276,7 @@
                 </p>
 
                 <a href="games/project-zero.html"
-                   class="hero-btn">
+                   class="hero-button">
 
                     VIEW GAME →
 
@@ -286,13 +284,17 @@
 
             </div>
 
-        </div>
+        </article>
 
-        <!-- ====================================== -->
+
+
+
+
+        <!-- ================================================= -->
         <!-- Slide 04 -->
-        <!-- ====================================== -->
+        <!-- ================================================= -->
 
-        <div class="slide">
+        <article class="slide">
 
             <img src="images/racing.jpg"
                  alt="Fingers Racing">
@@ -301,7 +303,7 @@
 
             <div class="hero-content">
 
-                <span class="category">
+                <span class="game-category">
 
                     STREET RACING
 
@@ -320,7 +322,7 @@
                 </p>
 
                 <a href="games/racing.html"
-                   class="hero-btn">
+                   class="hero-button">
 
                     VIEW GAME →
 
@@ -328,27 +330,35 @@
 
             </div>
 
-        </div>
+        </article>
 
-        <!-- ====================================== -->
+
+
+
+
+        <!-- ================================================= -->
         <!-- 左右切换按钮 -->
-        <!-- ====================================== -->
+        <!-- ================================================= -->
 
-        <button class="slider-btn prev">
+        <button class="slider-arrow prev">
 
             &#10094;
 
         </button>
 
-        <button class="slider-btn next">
+        <button class="slider-arrow next">
 
             &#10095;
 
         </button>
 
-        <!-- ====================================== -->
-        <!-- 指示器 -->
-        <!-- ====================================== -->
+
+
+
+
+        <!-- ================================================= -->
+        <!-- 圆点 -->
+        <!-- ================================================= -->
 
         <div class="slider-dots">
 
@@ -362,6 +372,30 @@
 
         </div>
 
+
+
+
+
+        <!-- ================================================= -->
+        <!-- Scroll 提示 -->
+        <!-- ================================================= -->
+
+        <div class="scroll-indicator">
+
+            <span>
+
+                SCROLL
+
+            </span>
+
+            <div class="mouse">
+
+                ↓
+
+            </div>
+
+        </div>
+
     </div>
 
 </section>
@@ -369,4 +403,3 @@
 <!-- ========================================================= -->
 <!-- Hero Slider 结束 -->
 <!-- ========================================================= -->
-    
