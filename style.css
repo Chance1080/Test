@@ -6,11 +6,13 @@ box-sizing:border-box;
 
 body{
 
-font-family:Montserrat,sans-serif;
+font-family:"Space Grotesk",sans-serif;
 
-background:#000;
+background:#090909;
 
 color:white;
+
+overflow-x:hidden;
 
 }
 
@@ -20,41 +22,51 @@ position:fixed;
 
 top:0;
 
+left:0;
+
 width:100%;
+
+padding:28px 80px;
 
 display:flex;
 
 justify-content:space-between;
 
-padding:25px 80px;
+align-items:center;
 
-z-index:100;
+z-index:999;
 
-background:rgba(0,0,0,.3);
+background:rgba(0,0,0,.25);
 
-backdrop-filter:blur(8px);
+backdrop-filter:blur(12px);
 
 }
 
 .logo{
 
-font-size:28px;
+font-size:32px;
 
-font-weight:800;
+font-weight:700;
 
-letter-spacing:3px;
+letter-spacing:4px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:40px;
 
 }
 
 nav a{
 
-color:white;
-
 text-decoration:none;
 
-margin-left:35px;
+color:white;
 
-font-weight:500;
+font-size:15px;
 
 transition:.3s;
 
@@ -62,7 +74,7 @@ transition:.3s;
 
 nav a:hover{
 
-color:#ffd400;
+color:#FFD447;
 
 }
 
@@ -70,97 +82,173 @@ color:#ffd400;
 
 height:100vh;
 
-background:url("../images/hero.jpg") center/cover;
+background:url("../images/hero.jpg") center center/cover;
+
+position:relative;
 
 display:flex;
 
 align-items:center;
 
+padding:120px;
+
 }
 
 .overlay{
 
-margin-left:100px;
+position:absolute;
 
-max-width:650px;
+inset:0;
+
+background:linear-gradient(
+
+90deg,
+
+rgba(0,0,0,.85),
+
+rgba(0,0,0,.4),
+
+rgba(0,0,0,.2)
+
+);
 
 }
 
-.overlay h1{
+.hero-content{
 
-font-size:82px;
+position:relative;
 
-line-height:80px;
+z-index:2;
 
-font-weight:900;
-
-margin-bottom:30px;
+max-width:700px;
 
 }
 
-.overlay p{
+.tag{
+
+background:#FFD447;
+
+color:black;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:700;
+
+}
+
+.hero h1{
+
+font-size:110px;
+
+line-height:.95;
+
+margin:25px 0;
+
+font-weight:700;
+
+}
+
+.hero p{
 
 font-size:22px;
 
-margin-bottom:35px;
+color:#d0d0d0;
 
-color:#ddd;
+line-height:1.6;
+
+margin-bottom:40px;
 
 }
 
-.btn{
+.buttons{
 
-display:inline-block;
+display:flex;
 
-padding:18px 45px;
+gap:20px;
 
-background:#ffd400;
+}
 
-color:#000;
+.btn-yellow{
 
-font-weight:bold;
+background:#FFD447;
+
+padding:18px 38px;
+
+color:black;
 
 text-decoration:none;
 
-border-radius:5px;
+font-weight:700;
+
+border-radius:50px;
 
 transition:.3s;
 
 }
 
-.btn:hover{
+.btn-yellow:hover{
 
-background:white;
+transform:translateY(-4px);
 
 }
 
-.featured{
+.btn-outline{
+
+border:2px solid white;
+
+padding:18px 38px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:black;
+
+}
+
+.games{
 
 padding:120px 80px;
 
 }
 
-.featured h2{
+.games h2{
 
-font-size:42px;
+font-size:50px;
 
-margin-bottom:50px;
+margin-bottom:60px;
 
 }
 
 .cards{
 
-display:flex;
+display:grid;
 
-gap:35px;
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
 
 }
 
 .card{
 
-background:#111;
+background:#171717;
 
-border-radius:15px;
+border-radius:22px;
 
 overflow:hidden;
 
@@ -174,92 +262,94 @@ cursor:pointer;
 
 width:100%;
 
-display:block;
+height:420px;
+
+object-fit:cover;
+
+transition:.5s;
 
 }
 
-.card h3{
+.card:hover img{
 
-padding:25px;
-
-font-size:24px;
+transform:scale(1.08);
 
 }
 
 .card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-10px);
 
 }
 
-.about{
+.info{
 
-height:600px;
+padding:25px;
 
-background:#111;
+}
 
-display:flex;
+.info h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.info p{
+
+color:#b5b5b5;
+
+}
+
+.studio{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+padding:150px 80px;
+
+gap:100px;
 
 align-items:center;
 
-padding:100px;
+}
+
+.studio h2{
+
+font-size:70px;
+
+line-height:1.1;
 
 }
 
-.about h2{
+.studio p{
 
-font-size:52px;
+font-size:22px;
 
-margin-bottom:25px;
+line-height:1.8;
 
-}
-
-.about p{
-
-font-size:20px;
-
-line-height:36px;
-
-color:#ccc;
-
-margin-bottom:35px;
-
-max-width:650px;
-
-}
-
-.btn2{
-
-display:inline-block;
-
-padding:18px 40px;
-
-border:2px solid #ffd400;
-
-color:#ffd400;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-.btn2:hover{
-
-background:#ffd400;
-
-color:black;
+color:#cccccc;
 
 }
 
 footer{
 
-padding:35px;
+padding:70px;
+
+border-top:1px solid #222;
 
 text-align:center;
 
-background:black;
+}
 
-color:#666;
+footer h3{
+
+font-size:32px;
+
+margin-bottom:15px;
+
+letter-spacing:5px;
 
 }
